@@ -17,3 +17,7 @@ $('btn-regresar').on('click', function(){
         principal.slideDown(1000)
     })
 });
+
+if(navigator.serviceWorker){
+    navigator.serviceWorker.register("/sw.js")
+}
